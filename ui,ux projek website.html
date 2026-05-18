@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Nurul Ikhlas - Dashboard</title>
+    <style>
+        :root {
+            --warna-utama: #4A90E2;
+            --warna-aksen: #FF85A1;
+            --warna-bg: #e0f7fa;
+            --warna-profil: #FFD93D; /* Warna Kuning untuk Profil */
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            background-color: var(--warna-bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            background: white;
+            width: 100%;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-bottom: 8px solid var(--warna-profil);
+        }
+
+        .logo-box {
+            width: 130px;
+            height: 130px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 5px solid var(--warna-aksen);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-box img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .nama-sekolah {
+            font-size: 2.5rem;
+            color: var(--warna-utama);
+            margin: 0;
+            text-shadow: 2px 2px 0px white;
+        }
+
+        /* GRID MENU - Sekarang 4 Kolom */
+        .container-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px 0;
+        }
+
+        .tombol-menu {
+            background: white;
+            border-radius: 35px;
+            padding: 35px 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-bottom: 10px solid #ddd;
+        }
+
+        .tombol-menu:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .icon { font-size: 70px; margin-bottom: 15px; display: block; }
+        .judul-menu { font-size: 1.6rem; color: #333; margin: 0; }
+
+        /* Warna Khusus Menu */
+        .bg-membaca { border-color: #FF85A1; }
+        .bg-menghitung { border-color: #6BCB77; }
+        .bg-kreatif { border-color: #A66CFF; }
+        .bg-profil { border-color: var(--warna-profil); }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-box">
+            <!-- Path Logo Kamu Sudah Benar -->
+            <img src="c:\Users\ilyash pangestu\Downloads\ChatGPT_Image_18_Mei_2026__18.53.23-removebg-preview.png" alt="Logo TK">
+        </div>
+        <h1 class="nama-sekolah">TK Nurul Ikhlas</h1>
+        <p style="color: #FF85A1; font-weight: bold; margin-top: 5px;">Mulai Belajar dengan Senyuman!</p>
+    </div>
+
+    <div class="container-menu">
+        <!-- Menu Membaca -->
+        <a href="membaca.html" class="tombol-menu bg-membaca">
+            <span class="icon">📖</span>
+            <h2 class="judul-menu">MEMBACA</h2>
+        </a>
+
+        <!-- Menu Menghitung -->
+        <a href="angka.html" class="tombol-menu bg-menghitung">
+            <span class="icon">🔢</span>
+            <h2 class="judul-menu">MENGHITUNG</h2>
+        </a>
+
+        <!-- Menu Kreatif -->
+        <a href="kreatif.html" class="tombol-menu bg-kreatif">
+            <span class="icon">🎨</span>
+            <h2 class="judul-menu">KREATIF</h2>
+        </a>
+
+        <!-- MENU PROFIL (Baru!) -->
+        <a href="profil.html" class="tombol-menu bg-profil">
+            <span class="icon">🏠</span>
+            <h2 class="judul-menu">PROFIL</h2>
+        </a>
+    </div>
+
+    <p style="color: #999; margin-bottom: 30px;">© 2026 TK Nurul Ikhlas - Dashboard Sekolah Anak</p>
+
+</body>
+</html>
